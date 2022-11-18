@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import { Calendar, FileText, HouseSimple, ImageSquare, MapPin, Megaphone } from 'phosphor-react'
+import FavouriteList from '../components/FavouriteList/FavouriteList'
 import Logo from '../components/Logo'
 import MenuHeading from '../components/MenuHeading/MenuHeading'
 import NavItem from '../components/NavItem/NavItem'
@@ -26,6 +27,8 @@ export default function Home() {
           <NavItem text='Files' link='#' icon={<FileText size={22} />} />
           <NavItem text='Galery' link='#' icon={<ImageSquare size={22} />} />
           <NavItem text='Events' link='#' icon={<Calendar size={22} />} />
+          <MenuHeading text='YOUR FAVOURITE' />
+          <FavouriteList />
         </nav>
       </aside>
       
