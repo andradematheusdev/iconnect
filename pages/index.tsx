@@ -4,6 +4,7 @@ import FavouriteList from '../components/FavouriteList/FavouriteList'
 import Logo from '../components/Logo'
 import MenuHeading from '../components/MenuHeading/MenuHeading'
 import NavList from '../components/NavList/NavList'
+import SearchBar from '../components/SearchBar/SearchBar'
 import UserMenu from '../components/UserMenu/UserMenu'
 import styles from '../styles/Home.module.scss'
 
@@ -39,9 +40,10 @@ export default function Home() {
       </aside>
       
       <main className={styles['middle-section']}>
-        <div>
+        <SearchBar />
+        <section>
           
-        </div>
+        </section>
       </main>
 
       <aside className={styles['right-section']}>
