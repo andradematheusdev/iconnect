@@ -4,6 +4,7 @@ import FavouriteList from '../components/FavouriteList/FavouriteList'
 import Logo from '../components/Logo'
 import MenuHeading from '../components/MenuHeading/MenuHeading'
 import NavList from '../components/NavList/NavList'
+import UserMenu from '../components/UserMenu/UserMenu'
 import styles from '../styles/Home.module.scss'
 
 export default function Home() {
@@ -44,9 +45,9 @@ export default function Home() {
       </main>
 
       <aside className={styles['right-section']}>
-        
+        <UserMenu />        
       </aside>
-
+      
       <footer>
         
       </footer>
