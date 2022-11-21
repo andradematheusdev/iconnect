@@ -8,8 +8,10 @@ interface INavItemProps{
 
 export default function NavItem({link,text,icon}: INavItemProps) {
   return (
-    <a href={link} className={styles.wrapper}>
-      <li><i>{icon && icon}</i>{text}</li>
-    </a>
+    <li className={styles.wrapper}>
+      <a href={link}>
+        <i>{icon && icon}</i>{text}
+      </a>
+    </li>
   )
 }

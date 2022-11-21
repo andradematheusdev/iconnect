@@ -1,12 +1,12 @@
 .wrapper{
   display: block;
   margin: 32px 0;
-  li{
+  a{
     display: flex;
     list-style-type: none;
     width: 100%;
     align-items: center;
-    line-height: 0;
+    white-space: nowrap;
     i:first-of-type{
       margin-right: 16px;
       font-style: normal;

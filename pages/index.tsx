@@ -1,9 +1,9 @@
 import Head from 'next/head'
-import { Calendar, FileText, HouseSimple, ImageSquare, MapPin, Megaphone } from 'phosphor-react'
+import Link from 'next/link'
 import FavouriteList from '../components/FavouriteList/FavouriteList'
 import Logo from '../components/Logo'
 import MenuHeading from '../components/MenuHeading/MenuHeading'
-import NavItem from '../components/NavItem/NavItem'
+import NavList from '../components/NavList/NavList'
 import styles from '../styles/Home.module.scss'
 
 export default function Home() {
@@ -20,16 +20,21 @@ export default function Home() {
           <Logo />
         </div>
         <nav className={styles.nav}>
-          <MenuHeading text='MENU' />
-          <NavItem text='Home' link='#' icon={<HouseSimple size={22} color={"#fff"} />} />
-          <NavItem text='Latest News' link='#' icon={<Megaphone size={22} />} />
-          <NavItem text='Explore' link='#' icon={<MapPin size={22} />} />
-          <NavItem text='Files' link='#' icon={<FileText size={22} />} />
-          <NavItem text='Galery' link='#' icon={<ImageSquare size={22} />} />
-          <NavItem text='Events' link='#' icon={<Calendar size={22} />} />
-          <MenuHeading text='YOUR FAVOURITE' />
-          <FavouriteList />
+          <ul>
+            <li>
+              <MenuHeading text='MENU' />
+            </li>
+            <NavList />
+            <li>
+              <MenuHeading text='YOUR FAVOURITE' />
+            </li>
+            <FavouriteList />
+          </ul>
         </nav>
+        <footer>
+          <span>Copyright 2022</span>
+          <Link href={"#"}>Help?</Link>
+        </footer>
       </aside>
       
       <main className={styles['middle-section']}>

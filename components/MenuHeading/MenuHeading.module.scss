@@ -1,5 +1,7 @@
+@import "../../styles/colors.scss";
+
 .heading{
   font-weight: bold;
-  color: #5d5e70;
+  color: $secondary;
   font-size: 12px;
 }
