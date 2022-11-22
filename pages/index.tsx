@@ -6,6 +6,7 @@ import FavouriteList from '../components/FavouriteList/FavouriteList'
 import Logo from '../components/Logo'
 import MenuHeading from '../components/MenuHeading/MenuHeading'
 import NavList from '../components/NavList/NavList'
+import ProfileMain from '../components/ProfileMain/ProfileMain'
 import SearchBar from '../components/SearchBar/SearchBar'
 import Stories from '../components/Stories/Stories'
 import UserMenu from '../components/UserMenu/UserMenu'
@@ -21,7 +22,7 @@ export default function Home() {
       </Head>
 
       <div className={styles.body}>        
-        <aside className={styles['left-section']}>
+        <aside className={styles.leftSection}>
           <div className={styles.logo}>
             <Logo />
           </div>
@@ -43,15 +44,16 @@ export default function Home() {
           </footer>
         </aside>
         
-        <main className={styles['middle-section']}>
+        <main className={styles.middleSection}>
           <div className={styles.search}>
             <SearchBar />
           </div>
           <section>
-        
+            <ProfileMain />
           </section>
         </main>
-        <aside className={styles['right-section']}>
+
+        <aside className={styles.rightSection}>
           <UserMenu />
           <ul className={styles.contacts}>
             <MenuHeading text="STORIES" />

@@ -1,0 +1,48 @@
+@import '../../styles/colors.scss';
+
+.wrapper{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  height: 450px;
+  background-color: $primaryDark;
+  border-radius: 4px;
+  overflow: hidden;
+  .cover{
+    display: flex;
+    width: 100%;
+    height: 380px;
+    position: relative;
+  }
+  .mainProfilePicture{
+    position: absolute;
+    bottom: 16px;
+    left: 16px;
+    border-radius: 128px;
+    border: 6px solid $primaryDark;
+  }
+  .profileNav{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+    justify-content: center;
+    list-style-type: none;
+    color: $white;
+    margin: auto;
+    li{
+      display: flex;
+      align-items: center;
+      height: 100%;
+      border-bottom: 4px solid $primaryDark;
+      border-top: 4px solid $primaryDark;
+      padding: 0 16px;
+    }
+    .active{      
+      border-top: 4px solid #141e35;
+      background: #141e35;
+      border-bottom: 4px solid $accent;
+    }
+  }
+}

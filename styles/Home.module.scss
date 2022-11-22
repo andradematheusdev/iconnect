@@ -12,7 +12,7 @@
     display: flex;
     width: 100%;
 
-    .left-section {
+    .leftSection {
       background: $primaryDark;
       display: flex;
       flex-direction: column;
@@ -46,7 +46,7 @@
       }
     }
   
-    .middle-section {
+    .middleSection {
       flex: 1;
       background: $primary;
       .search{
@@ -56,9 +56,12 @@
         padding: 0 16px;
         background: $primaryDark;
       }
+      section{
+        padding: 16px;
+      }
     }
   
-    .right-section {
+    .rightSection {
       background: $primaryDark;
       display: flex;
       flex-direction: column;
