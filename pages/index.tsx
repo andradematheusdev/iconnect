@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Link from 'next/link'
+import Contact from '../components/Contact/Contact'
 import FavouriteList from '../components/FavouriteList/FavouriteList'
 import Logo from '../components/Logo'
 import MenuHeading from '../components/MenuHeading/MenuHeading'
@@ -49,13 +50,17 @@ export default function Home() {
         </main>
         <aside className={styles['right-section']}>
           <UserMenu />
-          <div className={styles.stories}>
+          <ul className={styles.contacts}>
             <MenuHeading text="STORIES" />
             <Stories />
             <Stories />
             <Stories />
             <Stories />
-          </div>
+          </ul>
+          <ul className={styles.contacts}>
+            <MenuHeading text="CONTACTS" />
+            <Contact />
+          </ul>
         </aside>
       </div>
     </div>

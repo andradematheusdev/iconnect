@@ -13,7 +13,7 @@
     width: 100%;
 
     .left-section {
-      background: $bg-darker;
+      background: $primaryDark;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -48,19 +48,24 @@
   
     .middle-section {
       flex: 1;
-      background: $bg-dark;
+      background: $primary;
     }
   
     .right-section {
-      background: $bg-darker;
+      background: $primaryDark;
       display: flex;
       flex-direction: column;
       width: 300px;
       align-items: flex-start;
-      .stories{
+      .contacts{
         width: 100%;
-        padding: 32px 16px;
+        padding: 32px 24px;
         border-bottom: 1px solid $secondary;
+        list-style-type: none;
+      }
+      .contacts:last-of-type{
+        padding: 0px 24px;
+        border: 0;
       }
     }
 

@@ -1,7 +1,7 @@
-import Image from 'next/image';
-import styles from './Stories.module.scss';
+import Image from "next/image";
+import styles from "./Contact.module.scss";
 
-export default function Stories() {
+export default function Contact() {
   const profilePictureLoader=()=>{
     return `https://github.com/andradematheusdev.png`;
   }
@@ -15,11 +15,9 @@ export default function Stories() {
           height={24}
           alt="user profile picture"
           className={styles.picture}
-        />
-        <div>
-          <span className={styles.name}>Matheus Andrade</span>
-          <span className={styles.time}>29 Minutes Ago</span>
-        </div>
+        />        
+        <span className={styles.name}>Matheus Andrade</span>
+        <i className={styles.status}></i>
     </li>
   )
 }

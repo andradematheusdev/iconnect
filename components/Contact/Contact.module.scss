@@ -3,27 +3,24 @@
 .wrapper{
   display: flex;
   align-items: center;
+  justify-content: space-between;
   width: 100%;
   gap: 0 16px;
   margin: 16px 0px;
   .picture{
     width: 44px;
     height: 44px;
-    border: 2px solid $orange500;
     border-radius: 100px;
   }
   .name{
     color: $white;
-    font-size: 14px;
-    font-weight: bold;
+    text-align: left;
+    flex: 1;
   }
-  .time{
-    color: $secondary;
-    font-size: 12px;
-  }
-  div:first-of-type{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
+  .status{
+    background-color: $green500;
+    width: 6px;
+    height: 6px;
+    border-radius: 12px;
   }
 }
