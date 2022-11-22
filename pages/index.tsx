@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Link from 'next/link'
+import { Gear, Pencil, Plus } from 'phosphor-react'
 import Contact from '../components/Contact/Contact'
 import FavouriteList from '../components/FavouriteList/FavouriteList'
 import Logo from '../components/Logo'
@@ -43,7 +44,9 @@ export default function Home() {
         </aside>
         
         <main className={styles['middle-section']}>
-          <SearchBar />
+          <div className={styles.search}>
+            <SearchBar />
+          </div>
           <section>
         
           </section>
@@ -60,7 +63,20 @@ export default function Home() {
           <ul className={styles.contacts}>
             <MenuHeading text="CONTACTS" />
             <Contact />
+            <Contact />
+            <Contact />
+            <Contact />
+            <Contact />
+            <Contact />
+            <Contact />
+            <Contact />
           </ul>
+          <footer>
+            <SearchBar />
+            <Gear size={22} />
+            <Pencil size={22} />
+            <Plus size={22} />
+          </footer>
         </aside>
       </div>
     </div>
