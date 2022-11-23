@@ -1,8 +1,8 @@
 import { Basketball, Briefcase, DotsThree, House } from 'phosphor-react';
 import MenuHeading from '../MenuHeading/MenuHeading';
-import styles from './Introduction.module.scss';
+import styles from './IntroductionBlock.module.scss';
 
-export default function Introduction() {
+export default function IntroductionBlock() {
   return (
     <div className={styles.wrapper}>
       <div className={styles.header}>

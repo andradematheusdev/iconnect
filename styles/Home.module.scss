@@ -17,7 +17,6 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: center;
       width: 220px;
       border-right: 1px solid $primaryLight;
       .logo {
@@ -25,6 +24,7 @@
       }
       nav {
         display: flex;
+        flex: 1;
         width: 100%;
         text-align: left;
         color: white;
@@ -61,12 +61,12 @@
       }
       .mainGrid{
         display: grid;
-        grid-template-columns: 1fr 2fr;
-        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 3fr;
+        grid-template-rows: repeat(3, minmax(min-content, max-content));
         grid-template-areas: "b1 b4"
                              "b2 b4"
                              "b3 b4";
-        gap: 8px;
+        gap: 16px;
         .block1{ 
           grid-area: b1; 
         }
@@ -98,6 +98,7 @@
       .contacts:last-of-type{
         padding: 0px 24px;
         border: 0;
+        flex: 1;
       }
       footer {
         display: flex;

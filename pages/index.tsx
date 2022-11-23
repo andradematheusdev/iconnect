@@ -2,8 +2,9 @@ import Head from 'next/head'
 import Link from 'next/link'
 import { Gear, Pencil, Plus } from 'phosphor-react'
 import Contact from '../components/Contact/Contact'
+import EventBlock from '../components/EventBlock/EventBlock'
 import FavouriteList from '../components/FavouriteList/FavouriteList'
-import Introduction from '../components/Introduction/Introduction'
+import IntroductionBlock from '../components/IntroductionBlock/IntroductionBlock'
 import Logo from '../components/Logo'
 import MenuHeading from '../components/MenuHeading/MenuHeading'
 import NavList from '../components/NavList/NavList'
@@ -53,16 +54,16 @@ export default function Home() {
             <ProfileMain />
             <div className={styles.mainGrid}>
               <div className={styles.block1}>
-                <Introduction />
+                <IntroductionBlock />
               </div>
               <div className={styles.block2}>
-                <Introduction />
+                <EventBlock />
               </div>
               <div className={styles.block3}>
-                <Introduction />
+                <IntroductionBlock />
               </div>
               <div className={styles.block4}>
-                <Introduction />
+                <IntroductionBlock />
               </div>
             </div>
           </section>
