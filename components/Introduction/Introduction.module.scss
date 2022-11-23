@@ -9,5 +9,22 @@
     justify-content: space-between;
     padding: 16px;
   }
+  .body{
+    padding: 0 16px;
+    padding-bottom: 16px;
+    .topic{
+      display: flex;
+      align-items: center;
+      color: $white;
+      margin: 16px 0;
+      span{
+        margin-left: 16px;
+        b{
+          color: $accent;
+          font-weight: 400;
+        }
+      }
+    }
+  }
 }
   
