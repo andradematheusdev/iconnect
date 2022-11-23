@@ -11,7 +11,7 @@ export default function Introduction() {
       </div>
       <div className={styles.body}>
         <div className={styles.topic}><Briefcase size={22} /><span>Works at <b>Helorelabs</b></span></div>
-        <div className={styles.topic}><House size={22} /><span>Lives at <b>Magé, RJ</b></span></div>
+        <div className={styles.topic}><House size={22} /><span>Lives in <b>Magé, RJ</b></span></div>
         <div className={styles.topic}><Basketball size={22} /><span>Player name <b>Helore</b></span></div>
       </div>
     </div>
