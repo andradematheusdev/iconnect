@@ -52,10 +52,16 @@ export default function Home() {
           <section>
             <ProfileMain />
             <div className={styles.mainGrid}>
-              <div className="block1">
+              <div className={styles.block1}>
                 <Introduction />
               </div>
-              <div className="block2">
+              <div className={styles.block2}>
+                <Introduction />
+              </div>
+              <div className={styles.block3}>
+                <Introduction />
+              </div>
+              <div className={styles.block4}>
                 <Introduction />
               </div>
             </div>

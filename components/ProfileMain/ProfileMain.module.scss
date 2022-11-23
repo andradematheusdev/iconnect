@@ -16,12 +16,21 @@
     height: 380px;
     position: relative;
   }
-  .mainProfilePicture{
+  .user{
+    display: flex;
+    align-items: center;
     position: absolute;
     bottom: 16px;
-    left: 16px;
-    border-radius: 128px;
-    border: 6px solid $primaryDark;
+    left: 32px;
+    gap: 16px;
+    .mainProfilePicture{
+      border-radius: 128px;
+      border: 6px solid $primaryDark;
+    }
+    span{
+      color: white;
+      font-weight: bold;
+    }
   }
   .profileNav{
     display: flex;
