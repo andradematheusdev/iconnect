@@ -1,8 +1,9 @@
+@import '../../styles/main.scss';
 @import '../../styles/colors.scss';
 
 .wrapper{
   background: $primaryDark;
-  border-radius: 4px;
+  border-radius: $mainRadius;
   .header{
     display: flex;
     width: 100%;

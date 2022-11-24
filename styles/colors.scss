@@ -7,7 +7,17 @@ $black: #000;
 /* Neutral */
 $neutral300: #d4d4d4;
 $neutral500: #737373;
+$neutral600: #525252;
+$neutral700: #404040;
+$neutral800: #262626;
+$neutral900: #171717;
 
+/* Gray */
+$gray500: #6b7280;
+$gray600: #4b5563;
+$gray700: #374151;
+$gray800: #1f2937;
+$gray900: #111827;
 
 /* Slate */
 $slate500: #64748b;
@@ -27,10 +37,10 @@ $sky500: #0ea5e9;
 $sky700: #0369a1;
 
 /* App Colors */
-$primaryLight: $slate700;
-$primary: $slate800;
-$primaryDark: $slate900;
-$secondary: $slate500;
-$secondaryDark: $slate600;
+$primaryLight: $neutral700;
+$primary: $neutral800;
+$primaryDark: $neutral900;
+$secondary: $neutral500;
+$secondaryDark: $neutral600;
 $accent: $sky500;
 $accentDark: $sky700;
