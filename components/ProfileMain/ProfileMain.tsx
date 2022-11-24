@@ -19,6 +19,7 @@ export default function ProfileMain() {
           width={200}
           height={200}
           className={styles.mainProfilePicture}
+          unoptimized
         />
         <span>Matheus Andrade</span>
       </div>

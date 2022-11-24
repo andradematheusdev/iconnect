@@ -1,18 +1,19 @@
-import Head from 'next/head'
-import Link from 'next/link'
-import { Gear, Pencil, Plus } from 'phosphor-react'
-import Contact from '../components/Contact/Contact'
-import EventBlock from '../components/EventBlock/EventBlock'
-import FavouriteList from '../components/FavouriteList/FavouriteList'
-import IntroductionBlock from '../components/IntroductionBlock/IntroductionBlock'
-import Logo from '../components/Logo'
-import MenuHeading from '../components/MenuHeading/MenuHeading'
-import NavList from '../components/NavList/NavList'
-import ProfileMain from '../components/ProfileMain/ProfileMain'
-import SearchBar from '../components/SearchBar/SearchBar'
-import Stories from '../components/Stories/Stories'
-import UserMenu from '../components/UserMenu/UserMenu'
-import styles from '../styles/Home.module.scss'
+import Head from 'next/head';
+import Link from 'next/link';
+import { Gear, Pencil, Plus } from 'phosphor-react';
+import Contact from '../components/Contact/Contact';
+import EventBlock from '../components/EventBlock/EventBlock';
+import FavouriteList from '../components/FavouriteList/FavouriteList';
+import IntroductionBlock from '../components/IntroductionBlock/IntroductionBlock';
+import Logo from '../components/Logo';
+import MenuHeading from '../components/MenuHeading/MenuHeading';
+import NavList from '../components/NavList/NavList';
+import ProfileMain from '../components/ProfileMain/ProfileMain';
+import SearchBar from '../components/SearchBar/SearchBar';
+import Stories from '../components/Stories/Stories';
+import UserMenu from '../components/UserMenu/UserMenu';
+import YourPagesBlock from '../components/YourPagesBlock/YourPagesBlock';
+import styles from '../styles/Home.module.scss';
 
 export default function Home() {
   return (
@@ -60,7 +61,7 @@ export default function Home() {
                 <EventBlock />
               </div>
               <div className={styles.block3}>
-                <IntroductionBlock />
+                <YourPagesBlock />
               </div>
               <div className={styles.block4}>
                 <IntroductionBlock />

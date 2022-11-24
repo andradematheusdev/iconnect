@@ -15,6 +15,7 @@ export default function Contact() {
           height={24}
           alt="user profile picture"
           className={styles.picture}
+          unoptimized
         />        
         <span className={styles.name}>Matheus Andrade</span>
         <i className={styles.status}></i>

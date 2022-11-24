@@ -15,6 +15,7 @@ export default function Stories() {
           height={24}
           alt="user profile picture"
           className={styles.picture}
+          unoptimized
         />
         <div>
           <span className={styles.name}>Matheus Andrade</span>
