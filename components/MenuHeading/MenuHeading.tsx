@@ -5,8 +5,10 @@ interface IMenuHeadingProps{
   size?: number;
 }
 
-export default function MenuHeading({text, size = 12}: IMenuHeadingProps) {
+const MenuHeading = ({text, size = 12}: IMenuHeadingProps) => {
   return (
     <span className={styles.heading} style={{fontSize: size}}>{text}</span>
   )
 }
+
+export default MenuHeading;

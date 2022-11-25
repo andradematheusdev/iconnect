@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import styles from './EventBlock.module.scss';
 
-export default function EventBlock() {
+const EventBlock = () => {
   return (
     <div className={styles.wrapper}>
       <div className={styles.eventHead}>
@@ -18,3 +18,5 @@ export default function EventBlock() {
     </div>
   )
 }
+
+export default EventBlock;

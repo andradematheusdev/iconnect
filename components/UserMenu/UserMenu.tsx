@@ -2,7 +2,7 @@ import Image from "next/image";
 import { Bell, CaretDown, EnvelopeSimple } from "phosphor-react";
 import styles from "./UserMenu.module.scss";
 
-export default function UserMenu() {
+const UserMenu = () => {
   const profilePictureLoader=()=>{
     return `https://github.com/andradematheusdev.png`;
   }
@@ -28,3 +28,5 @@ export default function UserMenu() {
     </div>
   )
 }
+
+export default UserMenu;

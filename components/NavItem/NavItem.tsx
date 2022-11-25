@@ -6,7 +6,7 @@ interface INavItemProps{
   icon?: React.ReactNode | undefined;
 }
 
-export default function NavItem({link,text,icon}: INavItemProps) {
+const NavItem = ({link,text,icon}: INavItemProps) => {
   return (
     <li className={styles.wrapper}>
       <a href={link}>
@@ -15,3 +15,5 @@ export default function NavItem({link,text,icon}: INavItemProps) {
     </li>
   )
 }
+
+export default NavItem;

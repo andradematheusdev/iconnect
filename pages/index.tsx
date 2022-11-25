@@ -1,13 +1,12 @@
 import Head from 'next/head';
 import Link from 'next/link';
-import { Gear, Pencil, Plus } from 'phosphor-react';
+import { Calendar, FileText, Gear, HouseSimple, ImageSquare, MapPin, Megaphone, Pencil, Plus } from 'phosphor-react';
 import Contact from '../components/Contact/Contact';
 import EventBlock from '../components/EventBlock/EventBlock';
-import FavouriteList from '../components/FavouriteList/FavouriteList';
 import IntroductionBlock from '../components/IntroductionBlock/IntroductionBlock';
 import Logo from '../components/Logo';
 import MenuHeading from '../components/MenuHeading/MenuHeading';
-import NavList from '../components/NavList/NavList';
+import NavItem from '../components/NavItem/NavItem';
 import ProfileMain from '../components/ProfileMain/ProfileMain';
 import SearchBar from '../components/SearchBar/SearchBar';
 import Stories from '../components/Stories/Stories';
@@ -34,11 +33,22 @@ export default function Home() {
               <li>
                 <MenuHeading text='MENU' />
               </li>
-              <NavList />
+              <NavItem text='Home' link='#' icon={<HouseSimple size={22} color={"#fff"} />} />
+              <NavItem text='Latest News' link='#' icon={<Megaphone size={22} />} />
+              <NavItem text='Explore' link='#' icon={<MapPin size={22} />} />
+              <NavItem text='Files' link='#' icon={<FileText size={22} />} />
+              <NavItem text='Galery' link='#' icon={<ImageSquare size={22} />} />
+              <NavItem text='Events' link='#' icon={<Calendar size={22} />} />
               <li>
                 <MenuHeading text='YOUR FAVOURITE' />
               </li>
-              <FavouriteList />
+              <NavItem text="Foresto" link="#" icon={"🌳"} />
+              <NavItem text="Birds" link="#" icon={"🐦"}/>
+              <NavItem text="Nature" link="#" icon={"🌴"} />
+              <NavItem text="Animals" link="#" icon={"🐢"} />
+              <NavItem text="Motobike" link="#" icon={"🚴‍♂️"} />
+              <NavItem text="Mojave" link="#" icon={"🌱"} />
+              <NavItem text="Chemistry" link="#" icon={"🧪"} />
             </ul>
           </nav>
           <footer>

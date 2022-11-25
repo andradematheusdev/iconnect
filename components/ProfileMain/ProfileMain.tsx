@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import styles from './ProfileMain.module.scss';
 
-export default function ProfileMain() {
+const ProfileMain = () => {
   const profilePictureLoader=()=>{
     return `https://github.com/andradematheusdev.png`;
   }
@@ -33,3 +33,5 @@ export default function ProfileMain() {
     </div>
   )
 }
+
+export default ProfileMain;

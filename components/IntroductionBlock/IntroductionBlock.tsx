@@ -2,7 +2,7 @@ import { Basketball, Briefcase, DotsThree, House } from 'phosphor-react';
 import MenuHeading from '../MenuHeading/MenuHeading';
 import styles from './IntroductionBlock.module.scss';
 
-export default function IntroductionBlock() {
+const IntroductionBlock = () => {
   return (
     <div className={styles.wrapper}>
       <div className={styles.header}>
@@ -17,3 +17,5 @@ export default function IntroductionBlock() {
     </div>
   )
 }
+
+export default IntroductionBlock;

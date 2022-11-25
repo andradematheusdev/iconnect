@@ -1,7 +1,7 @@
 import Image from "next/image";
 import styles from "./Contact.module.scss";
 
-export default function Contact() {
+const Contact = () => {
   const profilePictureLoader=()=>{
     return `https://github.com/andradematheusdev.png`;
   }
@@ -22,3 +22,5 @@ export default function Contact() {
     </li>
   )
 }
+
+export default Contact;

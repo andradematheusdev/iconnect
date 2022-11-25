@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import styles from './Stories.module.scss';
 
-export default function Stories() {
+const Stories = () => {
   const profilePictureLoader=()=>{
     return `https://github.com/andradematheusdev.png`;
   }
@@ -24,3 +24,5 @@ export default function Stories() {
     </li>
   )
 }
+
+export default Stories;
