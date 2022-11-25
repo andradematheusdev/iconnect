@@ -12,14 +12,16 @@ const YourPagesBlock = () => {
       </div>
     <div className={styles.body}>
       <ul className={styles.pageWrapper}>
-        <Pages />
+        <Page />
+        <Page />
+        <Page />
       </ul>
     </div>
   </div>
   )
 }
 
-const Pages = () => {
+const Page = () => {
   return (
     <li>
       <Image
