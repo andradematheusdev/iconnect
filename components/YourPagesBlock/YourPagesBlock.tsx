@@ -11,30 +11,25 @@ const YourPagesBlock = () => {
         <DotsThree size={24} color={"#fff"} weight="bold" />
       </div>
     <div className={styles.body}>
-      
+      <ul className={styles.pageWrapper}>
+        <Pages />
+      </ul>
     </div>
   </div>
   )
 }
 
-export const Contact = () => {
-  const profilePictureLoader = () => {
-    return `https://github.com/andradematheusdev.png`;
-  }
-
+const Pages = () => {
   return (
-    <li className={styles.wrapper}>
+    <li>
       <Image
-          loader={profilePictureLoader}
-          src="https://github.com/andradematheusdev.png"
+          src="/images/user/cover/cover.jpg"
           width={24}
           height={24}
           alt="user profile picture"
-          className={styles.picture}
-          unoptimized
+          className={styles.image}
         />        
         <span className={styles.name}>Matheus Andrade</span>
-        <i className={styles.status}></i>
     </li>
   )
 }

@@ -27,5 +27,12 @@
       }
     }
   }
+  .pageWrapper{
+    list-style-type: none;
+    color: $white;
+    .image{
+      border-radius: 100px;
+    }
+  }
 }
   
