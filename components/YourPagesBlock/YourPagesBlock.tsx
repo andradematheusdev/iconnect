@@ -7,7 +7,7 @@ const YourPagesBlock = () => {
   return (
     <div className={styles.wrapper}>
       <div className={styles.header}>
-        <MenuHeading text='Introduction' size={16} />
+        <MenuHeading text='Your Pages' size={16} />
         <DotsThree size={24} color={"#fff"} weight="bold" />
       </div>
     <div className={styles.body}>
@@ -24,9 +24,10 @@ const Pages = () => {
     <li>
       <Image
           src="/images/user/cover/cover.jpg"
-          width={24}
-          height={24}
+          width={44}
+          height={44}
           alt="user profile picture"
+          style={{objectFit: 'cover'}}
           className={styles.image}
         />        
         <span className={styles.name}>Matheus Andrade</span>

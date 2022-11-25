@@ -7,110 +7,40 @@
   height: 100vh;
   margin: 0;
   padding: 0;
-
-  .body{
-    display: flex;
-    width: 100%;
-
-    .leftSection {
-      background: $primaryDark;
+  .middleSection {
+    flex: 1;
+    background: $primary;
+    .search{
       display: flex;
-      flex-direction: column;
       align-items: center;
-      width: 220px;
-      border-right: 1px solid $primaryLight;
-      .logo {
-        padding: 24px 0;
-      }
-      nav {
-        display: flex;
-        flex: 1;
-        width: 100%;
-        text-align: left;
-        color: white;
-        padding: 32px 0px;
-        justify-content: center;
-        ul {
-          list-style-type: none;
-          padding: 0;
-        }
-      }
-      footer {
-        display: flex;
-        width: 100%;
-        justify-content: space-between;
-        color: $secondary;
-        padding: 24px;
-        font-size: 12px;
-        border-top: 1px solid $secondary;
-      }
-    }
-  
-    .middleSection {
-      flex: 1;
-      background: $primary;
-      .search{
-        display: flex;
-        align-items: center;
-        height: 64px;
-        padding: 0 16px;
-        background: $primaryDark;
-      }
-      section{
-        padding: 16px;
-      }
-      .mainGrid{
-        display: grid;
-        grid-template-columns: 4fr 8fr;
-        grid-template-rows: repeat(3, minmax(min-content, max-content));
-        grid-template-areas: "b1 b4"
-                             "b2 b4"
-                             "b3 b4";
-        gap: 16px;
-        .block1{ 
-          grid-area: b1; 
-        }
-        .block2 {
-          grid-area: b2;
-        }
-        .block3 {
-          grid-area: b3;
-        }
-        .block4 {
-          grid-area: b4;
-          height: 100%;
-        }
-      }
-    }
-  
-    .rightSection {
+      height: 64px;
+      padding: 0 16px;
       background: $primaryDark;
-      display: flex;
-      flex-direction: column;
-      width: 300px;
-      align-items: flex-start;
-      .contacts{
-        width: 100%;
-        padding: 32px 24px;
-        border-bottom: 1px solid $secondary;
-        list-style-type: none;
+    }
+    section{
+      padding: 16px;
+    }
+    .mainGrid{
+      display: grid;
+      grid-template-columns: 4fr 8fr;
+      grid-template-rows: repeat(3, minmax(min-content, max-content));
+      grid-template-areas: "b1 b4"
+                          "b2 b4"
+                          "b3 b4";
+      gap: 16px;
+      .block1{ 
+        grid-area: b1; 
       }
-      .contacts:last-of-type{
-        padding: 0px 24px;
-        border: 0;
-        flex: 1;
+      .block2 {
+        grid-area: b2;
       }
-      footer {
-        display: flex;
-        width: 100%;
-        justify-content: space-between;
-        color: $secondary;
-        padding: 24px;
-        font-size: 12px;
-        border-top: 1px solid $secondary;
-        gap: 0 16px;
+      .block3 {
+        grid-area: b3;
+      }
+      .block4 {
+        grid-area: b4;
+        height: 100%;
       }
     }
-
-  }  
-}
+  }
+}  
