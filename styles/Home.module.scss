@@ -25,8 +25,8 @@
       grid-template-columns: 4fr 8fr;
       grid-template-rows: repeat(3, minmax(min-content, max-content));
       grid-template-areas: "b1 b4"
-                          "b2 b4"
-                          "b3 b4";
+                          "b2 b5"
+                          "b3 b5";
       gap: 16px;
       .block1{ 
         grid-area: b1; 
@@ -39,6 +39,9 @@
       }
       .block4 {
         grid-area: b4;
+      }
+      .block5 {
+        grid-area: b5;
         height: 100%;
       }
     }
