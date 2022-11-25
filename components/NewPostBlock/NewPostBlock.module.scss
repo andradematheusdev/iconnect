@@ -2,25 +2,71 @@
 @import '../../styles/colors.scss';
 
 .wrapper{
-  padding: 22px;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
   border-radius: $mainRadius;
   background: $primaryDark;
-  height: 100%;
+  overflow: hidden;
   .header{
     display: flex;
     width: 100%;
     list-style-type: none;
     gap: 0 16px;
     color: $white;
-    padding: 0;
+    padding: 16px;
     margin: 0;
     li{
       padding: 4px 8px;
+      font-size: 14px;
+      font-weight: bold;
     }
     .active{
       background-color: $secondaryDark;
       border-radius: 100px;
       padding: 4px 8px;      
+    }
+  }
+  .picture{
+    border-radius: 100px;
+  }
+  .inputArea{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 0 16px;
+    padding: 0 16px;
+    flex: 1;
+    input[type=text]{
+      flex: 1;
+      background: transparent;
+      border: 0;
+      outline: none;
+      color: $white;
+      font-size: 16px;
+    }
+  }
+  .footer{
+    display: flex;
+    align-items: center;
+    color: $white;
+    list-style-type: none;
+    width: 100%;
+    height: 48px;
+    border-top: 1px solid $secondary;
+    padding: 32px 12px;
+    li{
+      gap: 0 8px;
+      display: flex;
+      align-items: center;
+      margin-right: 16px;
+    }
+    li:last-of-type{
+      display: flex;
+      justify-content: end;
+      flex: 1;
+      margin: 0;
     }
   }
 }
