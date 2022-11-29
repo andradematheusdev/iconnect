@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import { MapPin, Smiley, UserCircle } from 'phosphor-react';
 import Button from '../Button/Button';
+import PostInput from '../PostInput/PostInput';
 
 import styles from './NewPostBlock.module.scss';
 
@@ -26,7 +27,7 @@ const NewPostBlock = () => {
             className={styles.picture}
             unoptimized
           />
-          <input type="text" name="" id="" placeholder={`Say something to Matheus...`} />       
+          <PostInput />
       </div>
       <ul className={styles.footer}>
         <li><span><UserCircle size={24} /></span> People</li>
