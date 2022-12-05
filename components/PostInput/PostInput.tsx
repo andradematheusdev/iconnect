@@ -9,7 +9,7 @@ const PostInput = () => {
     className={styles.post}
       name="post"
       id="post"
-      rows={2}
+      rows={1}
       placeholder="Say something to Matheus..."
       onChange={(e) => setPostText(e.target?.value)}
     ></textarea>

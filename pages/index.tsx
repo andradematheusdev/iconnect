@@ -7,6 +7,7 @@ import SearchBar from '../components/SearchBar/SearchBar';
 import YourPagesBlock from '../components/YourPagesBlock/YourPagesBlock';
 import styles from '../styles/Home.module.scss';
 import NewPostBlock from '../components/NewPostBlock/NewPostBlock';
+import UserPostBlock from '../components/UserPostBlock/UserPostBlock';
 
 export default function Home() {
   return (
@@ -38,7 +39,7 @@ export default function Home() {
                 <NewPostBlock />
               </div>
               <div className={styles.block5}>
-                <IntroductionBlock />
+                <UserPostBlock />
               </div>
             </div>
           </section>

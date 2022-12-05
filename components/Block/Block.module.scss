@@ -1,0 +1,17 @@
+@import '../../styles/main.scss';
+@import '../../styles/colors.scss';
+
+.wrapper{
+  background: $primaryDark;
+  border-radius: $mainRadius;
+  .head{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 16px;
+  }
+  .body{
+    padding: 0 16px;
+    padding-bottom: 16px;
+  }
+}

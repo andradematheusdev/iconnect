@@ -30,9 +30,9 @@ const NewPostBlock = () => {
           <PostInput />
       </div>
       <ul className={styles.footer}>
-        <li><span><UserCircle size={24} /></span> People</li>
-        <li><span><MapPin size={24} /></span> Check-in</li>
-        <li><span><Smiley size={24} /> </span> Mood</li>
+        <li><span>👤</span> People</li>
+        <li><span>✅</span> Check-in</li>
+        <li><span>🙂</span> Mood</li>
         <li><Button text='Share' /></li>
       </ul>
     </div>
