@@ -1,19 +1,12 @@
 import Block from '../Block/Block';
+import UserAvatar from '../UserAvatar/UserAvatar';
 import styles from './UserPostBlock.module.scss';
 
 const UserPostBlock = () => {
   return (
-    // <div className={styles.wrapper}>
-    //   <div className={styles.header}>
-    //     Header
-    //   </div>
-    //   <div className={styles.body}>
-    //     Body
-    //   </div>
-    // </div>
     <Block>
       <Block.Head>
-        Head Test
+        <UserAvatar />
       </Block.Head>
       <Block.Body>
         Body Test
