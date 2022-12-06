@@ -1,26 +1,28 @@
+import clsx from 'clsx';
 import styles from './Block.module.scss';
 
 interface IBlockProps{
   children: React.ReactNode | string | null;
+  className?: string;
 }
 
-const Block = ({ children }: IBlockProps) => {
+const Block = ({ children, className }: IBlockProps) => {
   return(
-    <div className={styles.wrapper}>
+    <div className={clsx(styles.wrapper, className)}>
       {children}
     </div>
   );
 };
-const Head = ({children}: IBlockProps) => {
+const Head = ({children, className}: IBlockProps) => {
   return(
-    <div className={styles.head}>
+    <div className={clsx(styles.head, className)}>
       {children}
     </div>
   );
 };
-const Body = ({children}: IBlockProps) => {
+const Body = ({children, className}: IBlockProps) => {
   return(
-    <div className={styles.body }>
+    <div className={clsx(styles.body, className) }>
       {children}
     </div>
   );

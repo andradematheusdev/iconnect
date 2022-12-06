@@ -4,12 +4,28 @@
 .wrapper{
   background: $primaryDark;
   border-radius: $mainRadius;
-  .header{
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    padding: 16px;
+  color: $white;
+  .head{
+    gap: 0 16px;
+    .userdata{
+      .headline{
+        span{
+          margin-right: 4px;
+        }
+        .username{
+          font-weight: bold;
+        }
+        .posttype{
+          color: $accent;
+        }
+      }
+      .time{
+        color: $secondary;
+        font-size: 14px;
+      }
+    }
   }
+  
   .body{
     padding: 0 16px;
     padding-bottom: 16px;

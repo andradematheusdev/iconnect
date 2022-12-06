@@ -1,22 +1,30 @@
 import Image from 'next/image';
 import styles from './UserAvatar.module.scss';
 
-const UserAvatar = () => {
+interface IUserAvatarProps{
+  width?: number;
+  height?: number;
+  avatarUrl: string;
+}
+
+const UserAvatar = ({height = 40, width = 40, avatarUrl}: IUserAvatarProps) => {
   
   const profilePictureLoader=()=>{
-    return `https://github.com/andradematheusdev.png`;
+    return avatarUrl;
   }
 
   return (
-    <Image
-            loader={profilePictureLoader}
-            src="https://github.com/andradematheusdev.png"
-            width={40}
-            height={40}
-            alt="user profile picture"
-            className={styles.image}
-            unoptimized
-          />
+    <div className={styles.wrapper}>
+      <Image
+              loader={profilePictureLoader}
+              src={avatarUrl}
+              width={width}
+              height={height}
+              alt="user profile picture"
+              className={styles.image}
+              unoptimized
+            />
+    </div>
   )
 }
 
