@@ -23,26 +23,14 @@
     .mainGrid{
       display: grid;
       grid-template-columns: 4fr 8fr;
-      grid-template-rows: repeat(3, minmax(min-content, max-content));
-      grid-template-areas: "b1 b4"
-                          "b2 b5"
-                          "b3 b5";
+      grid-template-rows: repeat(2, minmax(min-content, max-content));
+      grid-template-areas: "b1 b2";
       gap: 16px;
       .block1{ 
         grid-area: b1; 
       }
       .block2 {
         grid-area: b2;
-      }
-      .block3 {
-        grid-area: b3;
-      }
-      .block4 {
-        grid-area: b4;
-      }
-      .block5 {
-        grid-area: b5;
-        height: 100%;
       }
     }
   }

@@ -28,17 +28,12 @@ export default function Home() {
             <div className={styles.mainGrid}>
               <div className={styles.block1}>
                 <IntroductionBlock />
-              </div>
-              <div className={styles.block2}>
                 <EventBlock />
-              </div>
-              <div className={styles.block3}>
                 <YourPagesBlock />
               </div>
-              <div className={styles.block4}>
+              <div className={styles.block2}>
                 <NewPostBlock />
-              </div>
-              <div className={styles.block5}>
+                <UserPostBlock />
                 <UserPostBlock />
               </div>
             </div>

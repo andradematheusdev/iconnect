@@ -3,9 +3,10 @@
 
 .wrapper{
   background: $primaryDark;
-  height: 100%;
+  height: auto;
   border-radius: $mainRadius;
   overflow: hidden;
+  margin-bottom: 16px;
   .eventHead{
     position: relative;
     height: 200px;
