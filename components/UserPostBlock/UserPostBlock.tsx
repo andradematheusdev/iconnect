@@ -6,7 +6,7 @@ import {ReactPhotoCollage} from 'react-photo-collage';
 const UserPostBlock = () => {
 
   const settings = {
-    width: '600px',
+    width: '100%',
     height: ['250px', '170px'],
     layout: [2, 1],
     photos: [
