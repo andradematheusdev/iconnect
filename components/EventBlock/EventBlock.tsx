@@ -1,21 +1,22 @@
 import Image from 'next/image';
 import styles from './EventBlock.module.scss';
+import Block from '../Block/Block';
 
 const EventBlock = () => {
   return (
-    <div className={styles.wrapper}>
-      <div className={styles.eventHead}>
+    <Block className={styles.wrapper}>
+      <Block.Head className={styles.head}>
         <Image src={'/images/user/cover/cover.jpg'} fill alt='User next event.' style={{objectFit: 'cover'}} />
         <div className={styles.date}>
           <div className={styles.month}>Jan</div>
           <div className={styles.day}>01</div>
         </div>
-      </div>
-      <div className={styles.eventData}>
+      </Block.Head>
+      <Block.Body className={styles.eventData}>
         <h4>Winter Wonderland</h4>
         <span>01st Jan, 2022 07:00AM</span>
-      </div>
-    </div>
+      </Block.Body>
+    </Block>
   )
 }
 

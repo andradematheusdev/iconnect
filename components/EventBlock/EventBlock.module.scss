@@ -7,7 +7,8 @@
   border-radius: $mainRadius;
   overflow: hidden;
   margin-bottom: 16px;
-  .eventHead{
+
+  .head{
     position: relative;
     height: 200px;
     img{
@@ -16,8 +17,8 @@
   }
   .date{
     position: relative;
-    left: 16px;
-    top: 16px;
+    left: 0px;
+    top: 0px;
     width: 60px;
     .month{
       display: flex;
@@ -42,7 +43,7 @@
     }
   }
   .eventData{
-    padding: 16px 32px;
+    padding: 16px 22px;
     h4{
       margin: 0;
       margin-bottom: 8px;
