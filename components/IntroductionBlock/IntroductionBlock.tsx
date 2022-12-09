@@ -2,6 +2,7 @@ import { Basketball, Briefcase, DotsThree, House } from 'phosphor-react';
 import MenuHeading from '../MenuHeading/MenuHeading';
 import styles from './IntroductionBlock.module.scss';
 import Block from '../Block/Block';
+import {CustomPopover as Popover} from '../radixui/Popover';
 
 
 const IntroductionBlock = () => {
@@ -9,9 +10,7 @@ const IntroductionBlock = () => {
     <Block className={styles.wrapper}>
       <Block.Head className={styles.header}>
         <MenuHeading text='Introduction' size={16} />
-        <a href="#" role={'button'}>
-          <DotsThree size={24} color={"#fff"} weight="bold" />
-        </a>
+        <Popover />
       </Block.Head>
       <Block.Body className={styles.body}>
         <div className={styles.topic}><Briefcase size={22} /><span>Works at <a href="#">Helorelabs</a></span></div>
