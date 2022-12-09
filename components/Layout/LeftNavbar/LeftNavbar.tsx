@@ -16,7 +16,7 @@ const LeftNavbar = () => {
               <li>
                 <MenuHeading text='MENU' />
               </li>
-              <NavItem text='Home' link='#' icon={<HouseSimple size={22} color={"#fff"} />} />
+              <NavItem text='Home' link='#' icon={<HouseSimple size={22} />} />
               <NavItem text='News' link='#' icon={<Megaphone size={22} />} />
               <NavItem text='Discovery' link='#' icon={<MapPin size={22} />} />
               <NavItem text='Galery' link='#' icon={<ImageSquare size={22} />} />
