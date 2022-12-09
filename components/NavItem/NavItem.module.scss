@@ -7,9 +7,13 @@
     width: 100%;
     align-items: center;
     white-space: nowrap;
+    line-height: 1;
     i:first-of-type{
       margin-right: 16px;
       font-style: normal;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
   }
 }
