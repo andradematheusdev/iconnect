@@ -1,4 +1,4 @@
-@import "./colors.scss";
+@import "../colors.scss";
 
 .wrapper {
   display: flex;
@@ -8,10 +8,15 @@
   margin: 0;
   padding: 0;
   .middleSection {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     flex: 1;
     background: $primary;
+    min-width: 900px;
     .search{
       display: flex;
+      width: 100%;
       align-items: center;
       height: 64px;
       padding: 0 16px;
@@ -19,6 +24,9 @@
     }
     section{
       padding: 16px;
+      width: 100%;
+      max-width: 1180px;
+      min-width: 900px;
     }
     .mainGrid{
       display: grid;

@@ -12,13 +12,6 @@ const RightSidebar = () => {
     <aside className={styles.rightSection}>
           <UserMenu />
           <ul className={styles.contacts}>
-            <MenuHeading text="STORIES" />
-            <Stories />
-            <Stories />
-            <Stories />
-            <Stories />
-          </ul>
-          <ul className={styles.contacts}>
             <MenuHeading text="CONTACTS" />
             <Contact />
             <Contact />

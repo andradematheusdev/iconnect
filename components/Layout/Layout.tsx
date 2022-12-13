@@ -9,9 +9,13 @@ interface ILayoutProps{
 const Layout = ({children}: ILayoutProps) => {
   return (
     <div className={styles.body}>
-      <LeftNavbar />
+      <aside className={styles.left}>
+        <LeftNavbar />
+      </aside>
         {children}
-      <RightSidebar />
+      <aside className={styles.right}>
+        <RightSidebar />
+      </aside>
     </div>
   )
 }

@@ -3,4 +3,10 @@
 .body{
   display: flex;
   width: 100%;
+  .left{
+    min-width: 220px;
+  }
+  .right{
+    min-width: 300px;
+  }
 }

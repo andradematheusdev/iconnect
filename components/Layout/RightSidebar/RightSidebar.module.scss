@@ -4,8 +4,12 @@
   background: $primaryDark;
   display: flex;
   flex-direction: column;
-  width: 300px;
   align-items: flex-start;
+  width: 300px;
+  position: fixed;
+  min-height: 100vh;
+  max-height: 100vh;
+  border-left: 1px solid $primaryLight;
   .contacts{
     width: 100%;
     padding: 32px 24px;
