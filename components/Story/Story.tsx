@@ -1,7 +1,7 @@
 import UserAvatar from '../UserAvatar/UserAvatar';
-import styles from './Stories.module.scss';
+import styles from './Story.module.scss';
 
-const Stories = () => {
+const Story = () => {
   const profilePictureLoader=()=>{
     return `https://github.com/andradematheusdev.png`;
   }
@@ -11,12 +11,13 @@ const Stories = () => {
       <UserAvatar
         avatarUrl='https://github.com/andradematheusdev.png'
         className={styles.picture}
-        width={56}
-        height={56}
       />       
-      <span className={styles.name}>Matheus Andrade</span>
+      <div className={styles.data}>
+        <span className={styles.name}>Matheus Andrade</span>
+        <span className={styles.time}>15 minutes ago</span>
+      </div>
     </li>
   )
 }
 
-export default Stories;
+export default Story;

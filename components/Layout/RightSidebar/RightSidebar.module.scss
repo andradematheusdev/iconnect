@@ -10,6 +10,10 @@
   min-height: 100vh;
   max-height: 100vh;
   border-left: 1px solid $primaryLight;
+  .stories{
+    width: 100%;
+    list-style-type: none;
+  }
   .contacts{
     width: 100%;
     padding: 32px 24px;

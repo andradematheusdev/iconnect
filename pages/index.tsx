@@ -8,7 +8,7 @@ import SearchBar from "../components/SearchBar/SearchBar";
 import YourPagesBlock from "../components/YourPagesBlock/YourPagesBlock";
 import NewPostBlock from "../components/NewPostBlock/NewPostBlock";
 import UserPostBlock from "../components/UserPostBlock/UserPostBlock";
-import Stories from "../components/Stories/Stories";
+import Story from "../components/Story/Story";
 
 export default function Home() {
   return (
@@ -26,12 +26,6 @@ export default function Home() {
           </div>
           <section>
             <ProfileMain />
-            <ul className={styles.stories}>
-              <Stories />
-              <Stories />
-              <Stories />
-              <Stories />
-            </ul>
             <div className={styles.mainGrid}>
               <div className={styles.block1}>
                 <IntroductionBlock />

@@ -1,0 +1,24 @@
+@import '../../styles/colors.scss';
+
+.wrapper{
+  display: flex;
+  width: 100%;
+  margin: 8px 16px;
+  gap: 0 16px;
+  .picture{
+    border: 2px solid $accent;
+    margin-bottom: 8px;
+  }
+  .data{
+    display: flex;
+    flex-direction: column;
+    .name{
+      color: $white;
+      font-size: 14px;
+    }
+    .time{
+      font-size: 14px;
+      color: $secondary;
+    }
+  }
+}
