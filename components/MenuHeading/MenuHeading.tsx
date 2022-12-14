@@ -1,13 +1,15 @@
+import clsx from 'clsx';
 import styles from './MenuHeading.module.scss';
 
 interface IMenuHeadingProps{
   text: string;
   size?: number;
+  className?: string;
 }
 
-const MenuHeading = ({text, size = 12}: IMenuHeadingProps) => {
+const MenuHeading = ({text, size = 12, className}: IMenuHeadingProps) => {
   return (
-    <span className={styles.heading} style={{fontSize: size}}>{text}</span>
+    <span className={clsx(styles.heading, className)} style={{fontSize: size}}>{text}</span>
   )
 }
 

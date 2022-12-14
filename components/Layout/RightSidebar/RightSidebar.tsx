@@ -11,14 +11,15 @@ const RightSidebar = () => {
   return (
     <aside className={styles.rightSection}>
           <UserMenu />
+          <MenuHeading text="STORIES" />
           <ul className={styles.stories}>
-              <Story />
-              <Story />
-              <Story />
-              <Story />
+            <Story />
+            <Story />
+            <Story />
+            <Story />
           </ul>
+          <MenuHeading text="CONTACTS" />
           <ul className={styles.contacts}>
-            <MenuHeading text="CONTACTS" />
             <Contact />
             <Contact />
             <Contact />
