@@ -9,7 +9,7 @@ import { Gear, Pencil, Plus } from 'phosphor-react';
 
 const RightSidebar = () => {
   return (
-    <aside className={styles.rightSection}>
+    <div className={styles.rightSection}>
           <UserMenu />
           <MenuHeading text="STORIES" />
           <ul className={styles.stories}>
@@ -35,7 +35,7 @@ const RightSidebar = () => {
             <Pencil size={22} />
             <Plus size={22} />
           </footer>
-        </aside>
+        </div>
   )
 }
 
