@@ -1,4 +1,4 @@
-import { Basketball, Briefcase, DotsThree, House } from 'phosphor-react';
+import { Basketball, Briefcase, House, Pencil } from 'phosphor-react';
 import MenuHeading from '../MenuHeading/MenuHeading';
 import styles from './IntroductionBlock.module.scss';
 import Block from '../Block/Block';
@@ -9,8 +9,8 @@ const IntroductionBlock = () => {
   return (
     <Block className={styles.wrapper}>
       <Block.Head className={styles.header}>
-        <MenuHeading text='Introduction' size={16} />
-        <Popover />
+        <MenuHeading text='About' size={16} />
+        <a role={'button'}><Pencil size={18} color={"#fff"} /></a>
       </Block.Head>
       <Block.Body className={styles.body}>
         <div className={styles.topic}><Briefcase size={22} /><span>Works at <a href="#">Helorelabs</a></span></div>

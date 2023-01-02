@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import styles from './ProfileMain.module.scss';
 
 const ProfileMain = () => {
@@ -24,11 +25,11 @@ const ProfileMain = () => {
         <span>Matheus Andrade</span>
       </div>
       <ul className={styles.profileNav}>
-        <li className={styles.active}>Timeline</li>
-        <li>About</li>
-        <li>Friends</li>
-        <li>Photo</li>
-        <li>More</li>
+        <li className={styles.active}><Link href={"#"}>Timeline</Link></li>
+        <li><Link href={"#"}>About</Link></li>
+        <li><Link href={"#"}>Friends</Link></li>
+        <li><Link href={"#"}>Photo</Link></li>
+        <li><Link href={"#"}>More</Link></li>
       </ul>
     </div>
   )

@@ -43,6 +43,7 @@
     list-style-type: none;
     color: $white;
     margin: auto;
+    z-index: 10;
     li{
       display: flex;
       align-items: center;
@@ -50,6 +51,9 @@
       border-bottom: 4px solid $primaryDark;
       border-top: 4px solid $primaryDark;
       padding: 0 16px;
+      a{
+        color: $white;
+      }
     }
     .active{      
       border-top: 4px solid $primary;

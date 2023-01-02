@@ -10,7 +10,7 @@ const PostInput = () => {
       name="post"
       id="post"
       rows={1}
-      placeholder="Say something to Matheus..."
+      placeholder="What are you thinking about?..."
       onChange={(e) => setPostText(e.target?.value)}
     ></textarea>
   )

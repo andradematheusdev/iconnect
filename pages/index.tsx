@@ -7,8 +7,7 @@ import ProfileMain from "../components/ProfileMain/ProfileMain";
 import SearchBar from "../components/SearchBar/SearchBar";
 import YourPagesBlock from "../components/YourPagesBlock/YourPagesBlock";
 import NewPostBlock from "../components/NewPostBlock/NewPostBlock";
-import UserPostBlock from "../components/UserPostBlock/UserPostBlock";
-import Story from "../components/Story/Story";
+import Timeline from "../components/Timeline/Timeline";
 
 export default function Home() {
   return (
@@ -34,8 +33,7 @@ export default function Home() {
               </div>
               <div className={styles.block2}>
                 <NewPostBlock />
-                <UserPostBlock />
-                <UserPostBlock />
+                <Timeline />
               </div>
             </div>
           </section>
