@@ -8,4 +8,9 @@
   border: 0;
   color: $white;
   font-weight: bold;
+  cursor: pointer;
+  transition-duration: 100ms;
+  &:hover{
+    background: $accentDark;
+  }
 }
