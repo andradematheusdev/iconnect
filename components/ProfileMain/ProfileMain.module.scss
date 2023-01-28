@@ -22,7 +22,6 @@
     align-items: center;
     position: absolute;
     bottom: 16px;
-    left: 32px;
     gap: 16px;
     .mainProfilePicture{
       border-radius: 128px;
@@ -35,7 +34,6 @@
     }
   }
   .profileNav{
-    display: flex;
     align-items: center;
     width: 100%;
     height: 70px;
@@ -60,5 +58,25 @@
       background: $primary;
       border-bottom: 4px solid $accent;
     }
+  }
+}
+
+@media only screen and (min-width: $mobileBreakPoint){
+  .profileNav{
+    display: flex;
+  }
+  .user{
+    left: 32px;
+  }
+}
+
+@media only screen and (max-width: $mobileBreakPoint){
+  .profileNav{
+    display: none;
+  }
+  .user{
+    width: 100%;
+    flex-direction: column;
+    left: 0px;
   }
 }
