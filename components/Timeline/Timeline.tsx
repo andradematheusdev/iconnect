@@ -1,5 +1,5 @@
 import React from 'react'
-import UserPostBlock from '../UserPostBlock/UserPostBlock'
+import { UserPostBlock } from '../'
 
 const Timeline = () => {
   return (

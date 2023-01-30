@@ -1,11 +1,11 @@
 import { Basketball, Briefcase, House, Pencil } from 'phosphor-react';
 import MenuHeading from '../MenuHeading/MenuHeading';
 import styles from './IntroductionBlock.module.scss';
-import Block from '../Block/Block';
+import { Block } from '../';
 import {CustomPopover as Popover} from '../radixui/Popover';
 
 
-const IntroductionBlock = () => {
+export const IntroductionBlock = () => {
   return (
     <Block className={styles.wrapper}>
       <Block.Head className={styles.header}>
@@ -20,5 +20,3 @@ const IntroductionBlock = () => {
     </Block>
   )
 }
-
-export default IntroductionBlock;

@@ -1,9 +1,9 @@
-import Block from '../Block/Block';
 import UserAvatar from '../UserAvatar/UserAvatar';
 import styles from './UserPostBlock.module.scss';
 import {ReactPhotoCollage} from 'react-photo-collage';
+import { Block } from '../';
 
-const UserPostBlock = () => {
+export const UserPostBlock = () => {
 
   const settings = {
     width: '100%',

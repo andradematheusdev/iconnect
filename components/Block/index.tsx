@@ -6,7 +6,7 @@ interface IBlockProps{
   className?: string;
 }
 
-const Block = ({ children, className }: IBlockProps) => {
+export const Block = ({ children, className }: IBlockProps) => {
   return(
     <div className={clsx(styles.wrapper, className)}>
       {children}
@@ -30,5 +30,3 @@ const Body = ({children, className}: IBlockProps) => {
 
 Block.Head = Head;
 Block.Body = Body;
-
-export default Block;

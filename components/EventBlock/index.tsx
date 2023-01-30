@@ -1,8 +1,8 @@
 import Image from 'next/image';
 import styles from './EventBlock.module.scss';
-import Block from '../Block/Block';
+import { Block } from '../';
 
-const EventBlock = () => {
+export const EventBlock = () => {
   return (
     <Block className={styles.wrapper}>
       <Block.Head className={styles.head}>
@@ -19,5 +19,3 @@ const EventBlock = () => {
     </Block>
   )
 }
-
-export default EventBlock;
